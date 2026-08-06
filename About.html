@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white">
+    <!-- Navbar -->
+    <nav class="w-full fixed top-0 left-0 z-50 bg-black/80 backdrop-blur">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-6 px-8">
+            <div class="text-xl font-bold"></div>
+            <ul class="flex gap-10 text-sm uppercase tracking-widest font-geist font-bold">
+                <li>
+                    <a href="./Home.html"
+                        class="relative inline-block pb-2
+                        after:content-['']
+                        after:absolute
+                        after:left-0
+                        after:bottom-0
+                        after:w-full
+                        after:h-0.5
+                        after:bg-white
+                        after:origin-left
+                        after:scale-x-0
+                        after:transition-transform
+                        after:duration-300
+                        after:ease-out
+                        hover:after:scale-x-100">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="./About.html"
+                        class="relative inline-block pb-2
+                        after:content-['']
+                        after:absolute
+                        after:left-0
+                        after:bottom-0
+                        after:w-full
+                        after:h-0.5
+                        after:bg-white
+                        after:scale-x-100
+                        after:origin-left">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="./Project.html"
+                        class="relative inline-block pb-2
+                        after:content-['']
+                        after:absolute
+                        after:left-0
+                        after:bottom-0
+                        after:w-full
+                        after:h-0.5
+                        after:bg-white
+                        after:origin-left
+                        after:scale-x-0
+                        after:transition-transform
+                        after:duration-300
+                        after:ease-out
+                        hover:after:scale-x-100">
+                        Project
+                    </a>
+                </li>
+                <li>
+                    <a href="./Contact.html"
+                        class="relative inline-block pb-2
+                        after:content-['']
+                        after:absolute
+                        after:left-0
+                        after:bottom-0
+                        after:w-full
+                        after:h-0.5
+                        after:bg-white
+                        after:origin-left
+                        after:scale-x-0
+                        after:transition-transform
+                        after:duration-300
+                        after:ease-out
+                        hover:after:scale-x-100">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+            <img src="./public/img/logo.png" class="w-8">
+        </div>
+    </nav>
+    <!-- ================= PROFILE ================= -->
+    <section class="relative bg-black pt-48 pb-66 font-geist overflow-hidden">
+        <div class="max-w-7xl mx-auto px-10">
+            <div class="grid lg:grid-cols-[280px_1fr] items-center gap-14">
+                <!-- FOTO -->
+                <div class="flex justify-center">
+                    <div class="relative inline-block p-3">
+                        <div class="absolute inset-0 border border-white"></div>
+                        <img
+                            src="./assets/img/ProfilS.png"
+                            class="w-64 h-80 object-cover rounded">
+                        <span class="absolute -top-2 -left-2 w-4 h-4 bg-white"></span>
+                        <span class="absolute -top-2 -right-2 w-4 h-4 bg-white"></span>
+                        <span class="absolute -bottom-2 -left-2 w-4 h-4 bg-white"></span>
+                        <span class="absolute -bottom-2 -right-2 w-4 h-4 bg-white"></span>
+                    </div>
+                </div>
+                <!-- DESKRIPSI -->
+                <div>
+                    <h2 class="text-5xl font-bold text-white mb-8">
+                        Profil Singkat
+                    </h2>
+                    <p class="text-white text-lg leading-9 text-justify indent-10">
+                        Saya adalah lulusan S1 Matematika Universitas Negeri Malang
+                        dengan konsentrasi Matematika Komputasi. Memiliki minat dan
+                        pengalaman dalam pengembangan aplikasi web, Internet of Things
+                        (IoT), analisis data, serta editing video dan desain grafis.
+
+                        Terbiasa menerapkan pendekatan analitis dan pemecahan masalah
+                        untuk mengembangkan solusi digital yang efektif, serta mampu
+                        mengolah konten visual menjadi media yang menarik dan
+                        komunikatif.
+
+                        Saya selalu berkomitmen untuk terus mempelajari teknologi baru
+                        guna meningkatkan kemampuan di bidang software development,
+                        multimedia, dan data science.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Gradient ke bawah -->
+        <div
+            class="absolute bottom-0 left-0 w-full h-44
+            bg-linear-to-b
+            from-transparent
+            via-white/20
+            to-white
+            pointer-events-none">
+        </div>
+    </section>
+    <!-- ================= RIWAYAT PENDIDIKAN ================= -->
+    <section id="education" class="pt-28 pb-36 bg-white font-geist reveal">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Judul -->
+            <h2 class="text-5xl font-bold text-center text-black mb-18">
+                Riwayat Pendidikan
+            </h2>
+            <!-- Timeline -->
+            <div class="grid grid-cols-5 gap-8 items-start justify-items-center">
+                <!-- ================= TK ================= -->
+                <div class="flex flex-col items-center w-64">
+                    <span class="bg-black text-white text-sm font-semibold px-4 py-1 rounded-full mb-2">
+                        2006-2009
+                    </span>
+                    <h3 class="text-lg font-semibold text-black">
+                        Kelas-B
+                    </h3>
+                    <p class="text-base text-center whitespace-nowrap text-black mb-5">
+                        TK Purnama Sumberpucung
+                    </p>
+                    <div class="relative w-40 h-40 overflow-hidden rounded-full border border-black bg-black/15 backdrop-blur-[20px] flex items-center justify-center shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_20px_10px_rgba(255,255,255,0.08)] transition-all duration-300 hover:shadow-[0_15px_40px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-1px_0_rgba(255,255,255,0.15),inset_0_0_25px_10px_rgba(255,255,255,0.12)]">
+                        <img src="assets/img/tk.png" class="w-28 h-28 object-contain relative z-10" alt="TK">
+                    </div>
+                </div>
+                <!-- ================= SD ================= -->
+                <div class="flex flex-col items-center w-64 mt-16">
+                    <div class="relative w-40 h-40 overflow-hidden rounded-full border border-black bg-black/15 backdrop-blur-[20px] flex items-center justify-center shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_20px_10px_rgba(255,255,255,0.08)] transition-all duration-300 hover:shadow-[0_15px_40px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-1px_0_rgba(255,255,255,0.15),inset_0_0_25px_10px_rgba(255,255,255,0.12)]">
+                        <img src="assets/img/sd.png" class="w-28 h-28 object-contain relative z-10" alt="SD">
+                    </div>
+                    <h3 class="text-lg font-semibold text-black">
+                        Kelas-B
+                    </h3>
+                    <p class="text-base text-center whitespace-nowrap text-black">
+                        SDNU Kepanjen
+                    </p>
+                    <span class="bg-black text-white text-sm font-semibold px-4 py-1 rounded-full mt-2">
+                        2009-2015
+                    </span>
+                </div>
+                <!-- ================= SMP ================= -->
+                <div class="flex flex-col items-center w-64">
+                    <span class="bg-black text-white text-sm font-semibold px-4 py-1 rounded-full mb-2">
+                        2015-2018
+                    </span>
+                    <h3 class="text-lg font-semibold text-black">
+                        Kelas-I
+                    </h3>
+                    <p class="text-base text-center whitespace-nowrap text-black mb-5">
+                        SMP Negeri 4 Kepanjen
+                    </p>
+                    <div class="relative w-40 h-40 overflow-hidden rounded-full border border-black bg-black/15 backdrop-blur-[20px] flex items-center justify-center shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_20px_10px_rgba(255,255,255,0.08)] transition-all duration-300 hover:shadow-[0_15px_40px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-1px_0_rgba(255,255,255,0.15),inset_0_0_25px_10px_rgba(255,255,25五年)]">
+                        <img src="assets/img/smp.png"
+                            class="w-28 h-28 object-contain"
+                            alt="SMP">
+                    </div>
+                </div>
+                <!-- ================= SMA ================= -->
+                <div class="flex flex-col items-center w-64 mt-16">
+                    <div class="relative w-40 h-40 overflow-hidden rounded-full border border-black bg-black/15 backdrop-blur-[20px] flex items-center justify-center shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_20px_10px_rgba(255,255,255,0.08)] transition-all duration-300 hover:shadow-[0_15px_40px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-1px_0_rgba(255,255,255,0.15),inset_0_0_25px_10px_rgba(255,255,25五年)]">
+                        <img src="assets/img/sma.png"
+                            class="w-28 h-28 object-contain relative z-10"
+                            alt="SMA">
+                    </div>
+                    <h3 class="text-lg font-semibold text-black">
+                        MIPA-1
+                    </h3>
+                    <p class="text-base text-center whitespace-nowrap text-black">
+                        SMA Negeri 1 Kepanjen
+                    </p>
+                    <span class="bg-black text-white text-sm font-semibold px-4 py-1 rounded-full mt-2">
+                        2018-2021
+                    </span>
+                </div>
+                <!-- ================= UM ================= -->
+                <div class="flex flex-col items-center w-64">
+                    <span class="bg-black text-white text-sm font-semibold px-4 py-1 rounded-full mb-2">
+                        2022-2026
+                    </span>
+                    <h3 class="text-lg font-semibold text-black">
+                        S1 Matematika
+                    </h3>
+                    <p class="text-base text-center whitespace-nowrap text-black mb-5">
+                        Universitas Negeri Malang
+                    </p>
+                    <div class="relative w-40 h-40 overflow-hidden rounded-full border border-black bg-black/15 backdrop-blur-[20px] flex items-center justify-center shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_20px_10px_rgba(255,255,255,0.08)] transition-all duration-300 hover:shadow-[0_15px_40px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-1px_0_rgba(255,255,255,0.15),inset_0_0_25px_10px_rgba(255,255,255,0.12)]">
+                        <img src="assets/img/um.png"
+                            class="w-28 h-28 object-contain relative z-10"
+                            alt="UM">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= PENGALAMAN ORGANISASI ================= -->
+    <section id="organization" class="relative pt-28 pb-16 bg-black font-geist">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Judul -->
+            <div class="flex justify-center mt-10 mb-14">
+                <div class="inline-block">
+                    <h2 class="text-5xl font-medium text-white font-geist text-center">
+                        Pengalaman Organisasi
+                    </h2>
+                    <div class="relative w-full mt-2">
+                        <div class="h-0.5 bg-white"></div>
+                        <div class="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-white"></div>
+                        <div class="absolute right-0 top-1/2 translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-white"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card -->
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- ROHIS -->
+                <div class="                        
+                        relative
+                        overflow-hidden
+                        rounded
+                        border border-white
+                        bg-white/15
+                        backdrop-blur-[20px]
+                        shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_20px_10px_rgba(255,255,255,0.08)]
+                        transition-all
+                        duration-300
+                        hover:shadow-[0_15px_40px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-1px_0_rgba(255,255,255,0.15),inset_0_0_25px_10px_rgba(255,255,255,0.12)]
+                         min-h-125 p-5">
+                    <div class="flex items-center gap-5">
+                        <img
+                            src="assets/img/rohis.png"
+                            alt="ROHIS"
+                            class="w-24 h-24 object-contain">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">
+                                ROHIS UTSFILLAH
+                            </h3>
+                            <p class="text-lg text-white">
+                                Ketua Umum
+                            </p>
+                            <p class="text-lg text-white">
+                                2020/2021
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Garis -->
+                    <div class="relative mt-5">
+                        <div class="h-0.5 bg-white w-full"></div>
+                        <div
+                            class="absolute -left-1 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-white">
+                        </div>
+                        <div
+                            class="absolute -right-1 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-white">
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 mt-5 space-y-2 text-[16px] leading-6 text-white text-justify">
+                        <li>Memimpin dan mengoordinasikan seluruh kepengurusan organisasi selama satu periode.</li>
+                        <li>Menyusun serta mengawasi pelaksanaan program kerja setiap divisi.</li>
+                        <li>Mengelola komunikasi dan koordinasi antar pengurus untuk mencapai tujuan organisasi.</li>
+                        <li>Mengambil keputusan dan menyelesaikan permasalahan organisasi secara efektif.</li>
+                        <li>Meningkatkan kemampuan kepemimpinan, <i>public speaking</i>, dan manajemen organisasi.</li>
+                        <li>Membangun kerja sama tim yang solid dalam menjalankan berbagai kegiatan organisasi.</li>
+                    </ul>
+                </div>
+                <!-- HIMAFO -->
+                <div class="                        
+                        relative
+                        overflow-hidden
+                        rounded
+                        border border-white
+                        bg-white/15
+                        backdrop-blur-[20px]
+                        shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_20px_10px_rgba(255,255,255,0.08)]
+                        transition-all
+                        duration-300
+                        hover:shadow-[0_15px_40px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-1px_0_rgba(255,255,255,0.15),inset_0_0_25px_10px_rgba(255,255,255,0.12)]
+                         min-h-12-five p-5">
+                    <div class="flex items-center gap-5">
+                        <img
+                            src="assets/img/himafo.png"
+                            alt="HIMAFO"
+                            class="w-24 h-24 object-contain">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">
+                                HIMAFO
+                            </h3>
+                            <p class="text-lg text-white">
+                                Anggota
+                            </p>
+                            <p class="text-lg text-white">
+                                2022/2025
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Garis -->
+                    <div class="relative mt-5">
+                        <div class="h-0.5 bg-white w-full"></div>
+                        <div
+                            class="absolute -left-1 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-white">
+                        </div>
+                        <div
+                            class="absolute -right-1 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-white">
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 mt-5 space-y-2 text-[16px] leading-6 text-white text-justify">
+                        <li>Berpartisipasi aktif dalam berbagai program kerja dan kegiatan himpunan.</li>
+                        <li>Berkontribusi dalam kepanitiaan seminar, pelatihan, dan kegiatan kemahasiswaan.</li>
+                        <li>Bekerja sama dengan anggota lain dalam menyelesaikan tugas organisasi.</li>
+                        <li>Membantu pelaksanaan kegiatan agar berjalan sesuai dengan perencanaan.</li>
+                        <li>Meningkatkan kemampuan komunikasi, kolaborasi, dan manajemen waktu.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Gradient Atas -->
+        <div
+            class="
+            absolute top-0 left-0 
+            w-full h-32 
+            bg-linear-to-b 
+            from-white 
+            to-transparent 
+            pointer-events-none">
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-white text-black py-10 font-geist">
+        <div class="max-w-7xl mx-auto px-14 py-6">
+            <!-- Bagian Atas -->
+            <div class="flex justify-between">
+                <!-- Logo -->
+                <div>
+                    <img src="./assets/img/Icon Kucing Hitam.png"
+                        class="w-12"
+                        alt="Logo">
+                </div>
+                <!-- Tengah -->
+                <div>
+                    <h1 class="text-6xl font-bold leading-none">
+                        Let's talk <br>
+                        Hit Me Up!↗
+                    </h1>
+                    <div class="grid grid-cols-2 gap-16 mt-8">
+                        <!-- Menu -->
+                        <div class="space-y-3 text-lg">
+                            <a href="./Home.html"
+                                class="block hover:translate-x-1 transition">
+                                Home
+                            </a>
+                            <a href="./About.html"
+                                class="block hover:translate-x-1 transition">
+                                About
+                            </a>
+                            <a href="./Project.html"
+                                class="block hover:translate-x-1 transition">
+                                Project
+                            </a>
+                            <a href="./Contact.html"
+                                class="block hover:translate-x-1 transition">
+                                Contact
+                            </a>
+                        </div>
+                        <!-- Social -->
+                        <div class="space-y-3">
+                            <a href="https://github.com/alfitodia?tab=repositories"
+                                class="flex items-center justify-between w-40 group">
+                                <span>Github</span>
+                                <img src="./assets/img/ExternalLinkBlack.png"
+                                    class="w-4 transition duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
+                            </a>
+                            <a href="https://www.instagram.com/alfito_dia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                class="flex items-center justify-between w-40 group">
+                                <span>Instagram</span>
+                                <img src="./assets/img/ExternalLinkBlack.png"
+                                    class="w-4 transition duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
+                            </a>
+                            <a href="https://www.tiktok.com/@alfito_dia?is_from_webapp=1&sender_device=pc"
+                                class="flex items-center justify-between w-40 group">
+                                <span>TikTok</span>
+                                <img src="./assets/img/ExternalLinkBlack.png"
+                                    class="w-4 transition duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bagian Bawah -->
+            <div class="flex justify-between items-end text-sm">
+                <div>
+                    <p>
+                        ©2026 Alfito Deanova Issac Alfarros
+                    </p>
+                    <p class="text-black mt-1">
+                        This website runs on the internet and your smile.
+                    </p>
+                </div>
+                <p id="weather" class="text-black font-geist">
+                    Loading weather...
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
