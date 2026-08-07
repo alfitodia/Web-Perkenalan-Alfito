@@ -9,90 +9,95 @@
     <link href="./src/output.css" rel="stylesheet">
 </head>
 <body class="bg-black text-white">
-    <!-- Navbar -->
-    <nav class="w-full fixed top-0 left-0 z-50 bg-black/80 backdrop-blur">
-        <div class="max-w-7xl mx-auto flex justify-between items-center py-6 px-8">
-            <div class="text-xl font-bold"></div>
-            <ul class="flex gap-10 text-sm uppercase tracking-widest font-geist font-bold">
-                <!-- Active -->
-                <li>
-                    <a href="./Home.html"
-                        class="relative inline-block pb-2
-                        after:content-['']
-                        after:absolute
-                        after:left-0
-                        after:bottom-0
-                        after:w-full
-                        after:h-0.5
-                        after:bg-white
-                        after:scale-x-100
-                        after:origin-left">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="./About.html"
-                        class="relative inline-block pb-2
-                        after:content-['']
-                        after:absolute
-                        after:left-0
-                        after:bottom-0
-                        after:w-full
-                        after:h-0.5
-                        after:bg-white
-                        after:origin-left
-                        after:scale-x-0
-                        after:transition-transform
-                        after:duration-300
-                        after:ease-out
-                        hover:after:scale-x-100">
-                        About
-                    </a>
-                </li>
-                <li>
-                    <a href="./Project.html"
-                        class="relative inline-block pb-2
-                        after:content-['']
-                        after:absolute
-                        after:left-0
-                        after:bottom-0
-                        after:w-full
-                        after:h-0.5
-                        after:bg-white
-                        after:origin-left
-                        after:scale-x-0
-                        after:transition-transform
-                        after:duration-300
-                        after:ease-out
-                        hover:after:scale-x-100">
-                        Project
-                    </a>
-                </li>
-                <li>
-                    <a href="./Contact.html"
-                        class="relative inline-block pb-2
-                        after:content-['']
-                        after:absolute
-                        after:left-0
-                        after:bottom-0
-                        after:w-full
-                        after:h-0.5
-                        after:bg-white
-                        after:origin-left
-                        after:scale-x-0
-                        after:transition-transform
-                        after:duration-300
-                        after:ease-out
-                        hover:after:scale-x-100">
-                        Contact
-                    </a>
-                </li>
-            </ul>
-            <img src="./public/img/logo.png" class="w-8">
-        </div>
-    </nav>
+        <!-- Navbar -->
+        <nav class="fixed top-3 left-1/2 -translate-x-1/2 z-50 w-full px-8">
+            <div
+                class="max-w-7xl mx-auto flex justify-between items-center
+                py-3 px-8
+                relative
+                overflow-hidden
+                rounded-full
+                border border-white
+                bg-white/15
+                backdrop-blur-[20px]">
+                <div class="text-xl font-bold"></div>
+                <ul class="flex gap-10 text-sm uppercase tracking-widest font-geist font-bold text-white">
+                    <!-- Active -->
+                    <li>
+                        <a href="./Home.html"
+                            class="relative inline-block pb-2
+                            after:content-['']
+                            after:absolute
+                            after:left-0
+                            after:bottom-0
+                            after:w-full
+                            after:h-0.5
+                            after:bg-white
+                            after:scale-x-100
+                            after:origin-left">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./About.html"
+                            class="relative inline-block pb-2
+                            after:content-['']
+                            after:absolute
+                            after:left-0
+                            after:bottom-0
+                            after:w-full
+                            after:h-0.5
+                            after:bg-white
+                            after:origin-left
+                            after:scale-x-0
+                            after:transition-transform
+                            after:duration-300
+                            hover:after:scale-x-100">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./Project.html"
+                            class="relative inline-block pb-2
+                            after:content-['']
+                            after:absolute
+                            after:left-0
+                            after:bottom-0
+                            after:w-full
+                            after:h-0.5
+                            after:bg-white
+                            after:origin-left
+                            after:scale-x-0
+                            after:transition-transform
+                            after:duration-300
+                            hover:after:scale-x-100">
+                            Project
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./Contact.html"
+                            class="relative inline-block pb-2
+                            after:content-['']
+                            after:absolute
+                            after:left-0
+                            after:bottom-0
+                            after:w-full
+                            after:h-0.5
+                            after:bg-white
+                            after:origin-left
+                            after:scale-x-0
+                            after:transition-transform
+                            after:duration-300
+                            hover:after:scale-x-100">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <img src="./public/img/logo.png" class="w-8">
+            </div>
+        </nav>
     <!-- ================= Landing ================= -->
-    <section id="landing" class="relative bg-black pt-45 pb-65 font-geist overflow-hidden">
+    <section id="landing" class="relative bg-black pt-40 pb-65 font-geist overflow-hidden">
         <div class="absolute top-2 -left-20 w-44 h-44 rounded-full bg-white blur-3xl opacity-70"></div>
         <div class="absolute bottom-12 -right-20 w-44 h-44 rounded-full bg-white blur-3xl opacity-70"></div>
         <div class="max-w-6xl mx-auto w-full px-10">
