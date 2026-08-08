@@ -60,6 +60,12 @@
     font-weight: 400;
 }
 
+@font-face {
+    font-family: "Monsterrat";
+    src: url("../assets/font/Monsterrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-weight: 700;
+}
+
 @layer utilities {
 
     .font-geist {
@@ -68,6 +74,10 @@
 
     .font-flatlion {
         font-family: "Flatlion", sans-serif;
+    }
+
+    .font-monsterrat {
+        font-family: "Monsterrat", sans-serif;
     }
 }
 
