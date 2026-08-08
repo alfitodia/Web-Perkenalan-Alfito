@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Preloading</title>
+    <link
+        rel="stylesheet"
+        href="./src/output.css">
+</head>
+
+<body class="m-0 p-0">
+    <!-- ================= PRELOADER ================= -->
+    <section
+        id="welcome"
+        class="
+            relative
+            flex
+            h-screen
+            w-full
+            items-center
+            justify-center
+            overflow-hidden
+            bg-[#F6F2EB]
+        ">
+        <img
+            src="./assets/img/Awan Kiri.png"
+            alt=""
+            class="
+                pointer-events-none
+                absolute
+                left-0
+                top-[7%]
+                w-55
+                select-none
+            ">
+        <img
+            src="./assets/img/Awan Kanan.png"
+            alt=""
+            class="
+                pointer-events-none
+                absolute
+                right-0
+                top-[7%]
+                w-55
+                select-none
+            ">
+        <img
+            src="./assets/img/Rumput Kiri.png"
+            alt=""
+            class="
+                pointer-events-none
+                absolute
+                bottom-0
+                left-0
+                w-45
+                select-none
+            "
+        >
+        <img
+            src="./assets/img/Rumput Kanan.png"
+            alt=""
+            class="
+                pointer-events-none
+                absolute
+                bottom-0
+                right-0
+                w-45
+                select-none
+            ">
+        <div
+            class="
+                relative
+                z-10
+                flex
+                flex-col
+                items-center
+            ">
+            <div class="relative">
+                <img
+                    src="./assets/img/Kupu Kupu.png"
+                    alt=""
+                    class="
+                        pointer-events-none
+                        absolute
+                        -left-8
+                        top-1
+                        z-10
+                        w-15
+                        select-none
+                    ">
+                <h1
+                    class="
+                        font-flatlion
+                        text-[200px]
+                        leading-none
+                        tracking-wide
+                        text-[#00604A]
+                    ">
+                    Welcome
+                </h1>
+            </div>
+            <div
+                class="
+                    mt-7
+                    w-63.75
+                ">
+                <div
+                    class="
+                        relative
+                        h-1
+                        w-full
+                        overflow-hidden
+                        rounded-full
+                        bg-[#8C6345]
+                    ">
+                    <div
+                        id="loading-progress"
+                        class="
+                            h-full
+                            w-0
+                            rounded-full
+                            bg-[#00604A]
+                        "
+                    ></div>
+                </div>
+                <p
+                    id="loading-number"
+                    class="
+                        mt-2
+                        text-center
+                        font-geist
+                        text-[13px]
+                        font-semibold
+                        tracking-wide
+                        text-[#00604A]
+                    ">
+                    0%
+                </p>
+            </div>
+        </div>
+    </section>
+    <script src="./Preloader.js"></script>
+</body>
+</html>

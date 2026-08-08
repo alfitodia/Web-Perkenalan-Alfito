@@ -332,3 +332,91 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 reveals.forEach(el => observer.observe(el));
+
+(function () {
+    const navigation =
+        performance.getEntriesByType("navigation")[0];
+
+    const navigationType =
+        navigation ? navigation.type : "navigate";
+
+    const referrer =
+        document.referrer;
+
+    let fromInternalPage = false;
+
+    if (referrer) {
+        try {
+            const previousURL =
+                new URL(referrer);
+            fromInternalPage =
+                previousURL.origin === window.location.origin;
+        } catch (error) {
+            fromInternalPage = false;
+        }
+    }
+
+    let shouldShowPreloader = true;
+
+    if (fromInternalPage) {
+        shouldShowPreloader = false;
+    }
+
+    if (navigationType === "reload") {
+        shouldShowPreloader = true;
+    }
+
+    if (!shouldShowPreloader) {
+        return;
+    }
+
+    const preloaderFrame =
+        document.createElement("iframe");
+
+    preloaderFrame.id =
+        "preloader-frame";
+
+    preloaderFrame.src =
+        "./preloader.html";
+
+    preloaderFrame.className = `
+        fixed
+        inset-0
+        z-[99999]
+        h-screen
+        w-full
+        border-0
+    `;
+
+    document.body.prepend(
+        preloaderFrame
+    );
+
+    window.addEventListener(
+        "message",
+        function (event) {
+            if (
+                event.data !==
+                "preloader-finished"
+            ) {
+                return;
+            }
+
+            const frame =
+                document.getElementById(
+                    "preloader-frame"
+                );
+
+            if (!frame) {
+                return;
+            }
+
+            frame.style.pointerEvents =
+                "none";
+
+            setTimeout(() => {
+                frame.remove();
+            }, 100);
+        }
+    );
+})();
