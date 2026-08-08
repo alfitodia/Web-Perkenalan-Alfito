@@ -813,13 +813,13 @@
     </section>
     <!-- ================= Bisnis Owner ================= -->
     <section id="business-owner" class="relative py-24 bg-[#F6F2EB] overflow-hidden font-geist">
-        <!-- Gradient -->
-        <div class="absolute top-0 left-0 w-full h-40
-                    bg-linear-to-b from-white via-gray-400/20 to-transparent">
-        </div>
+    <!-- Gradient -->
+    <div class="absolute top-0 left-0 w-full h-40
+        bg-linear-to-b from-white via-gray-400/20 to-transparent">
+    </div>
     <div class="reveal">
         <div class="relative z-10 max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
+            <div class="text-center mb-16 pt-12">
                 <h2 class="text-5xl font-bold text-[#006041]">
                     Business Owner
                 </h2>
@@ -831,7 +831,7 @@
 
             <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-6">
                 <!-- ================= CARD 1 ================= -->
-                <div class="relative overflow-hidden rounded-xl border border-[#006041] bg-white/15 backdrop-blur-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_20px_10px_rgba(255,255,255,0.08)] flex flex-col h-full">
+                <div class="relative overflow-hidden rounded-xl border border-[#006041] bg-[#F6F2EB]/15 backdrop-blur-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_20px_10px_rgba(255,255,255,0.08)] flex flex-col h-full">
                     <div class="flex justify-center shrink-0">
                         <div class="p-6">
                             <img src="assets/img/Alsmie.jpg" class="w-40 h-40 object-contain">
@@ -844,7 +844,7 @@
                     <p class="text-center text-black text-sm leading-6 flex-1 mb-4">
                         Alsmie merupakan usaha kuliner yang menyajikan berbagai olahan mi berkualitas, seperti mie ayam, mie teratai, dan mie yamin.
                     </p>
-                    <hr class="border-white mb-4 shrink-0">
+                    <hr class="border-black mb-4 shrink-0">
                     <div class="flex flex-col gap-3 text-sm mb-4 min-h-40 shrink-0">
                         <div class="flex items-start gap-3">
                             <img src="assets/img/CalenderCoklat.png" class="w-5 h-5 mt-0.5 shrink-0">
@@ -861,14 +861,30 @@
                             </div>
                         </div>
                     </div>
-                    <button class="mt-auto w-full rounded-md bg-[#006041] py-3 flex justify-center items-center gap-4 hover:border-[#006041] transition">
-                        <span class="font-semibold text-sm text-white hover:text-[#006041]">Lihat Selengkapnya</span>
-                        <img src="assets/img/ChevronPutih.png" class="w-5 h-5">
+                    <button
+                        class="group mt-auto w-full rounded-md
+                            bg-[#006041] border border-[#006041]
+                            py-3 flex justify-center items-center gap-4
+                            transition-all duration-300
+                            hover:bg-transparent">
+                        <span
+                            class="font-semibold text-sm text-white
+                                transition-colors duration-300
+                                group-hover:text-[#006041]">
+                            Lihat Selengkapnya
+                        </span>
+                        <img
+                            src="assets/img/ChevronPutih.png"
+                            class="w-5 h-5 block group-hover:hidden"
+                        >
+                        <img
+                            src="assets/img/ChevronIjo.png"
+                            class="w-5 h-5 hidden group-hover:block">
                     </button>
                 </div>
 
                 <!-- ================= CARD 2 ================= -->
-                <div class="relative overflow-hidden rounded-xl border border-[#006041] bg-black/15 backdrop-blur-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_20px_10px_rgba(255,255,255,0.08)] flex flex-col h-full">
+                <div class="relative overflow-hidden rounded-xl border border-[#006041] bg-[#F6F2EB]/15 backdrop-blur-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_20px_10px_rgba(255,255,255,0.08)] flex flex-col h-full">
                     <div class="flex justify-center shrink-0">
                         <div class="p-6">
                             <img src="assets/img/Alcoc.png" class="w-40 h-40 object-contain">
@@ -878,35 +894,51 @@
                         <h3 class="text-3xl font-bold text-[#006041] leading-tight">ALCOC BRICKET</h3>
                         <span class="px-4 py-1 rounded-full bg-white text-sm text-black">Solid Fuel Commodities.</span>
                     </div>
-                    <p class="text-center text-white text-sm leading-6 flex-1 mb-4">
+                    <p class="text-center text-black text-sm leading-6 flex-1 mb-4">
                         Alcoc Bricket bergerak di bidang produksi dan penjualan briket arang berbahan dasar batok kelapa.
                     </p>
-                    <hr class="border-white mb-4 shrink-0">
+                    <hr class="border-black mb-4 shrink-0">
                     <div class="flex flex-col gap-3 text-sm mb-4 min-h-40 shrink-0">
                         <div class="flex gap-3">
-                            <img src="assets/img/CalenderPutih.png" class="w-5 h-5 shrink-0">
+                            <img src="assets/img/CalenderCoklat.png" class="w-5 h-5 shrink-0">
                             <div>
-                                <h4 class="font-semibold">Berdiri Sejak</h4>
-                                <p class="text-white">2023</p>
+                                <h4 class="font-semibold text-black">Berdiri Sejak</h4>
+                                <p class="text-black">2023</p>
                             </div>
                         </div>
                         <div class="flex gap-3">
-                            <img src="assets/img/LokasiPutih.png" class="w-5 h-5 shrink-0">
+                            <img src="assets/img/LokasiCoklat.png" class="w-5 h-5 shrink-0">
                             <div>
-                                <h4 class="font-semibold">Lokasi Tempat</h4>
-                                <p class="text-white wrap-break-word">Jl. Kodari Mentaraman, Ngebruk, 
+                                <h4 class="font-semibold text-black">Lokasi Tempat</h4>
+                                <p class="text-black wrap-break-word">Jl. Kodari Mentaraman, Ngebruk, 
                                     Kec. Sumberpucung, Kabupaten Malang, Jawa Timur 65165</p>
                             </div>
                         </div>
                     </div>
-                    <button class="mt-auto w-full rounded-md bg-gray-200 py-3 flex justify-center items-center gap-4 hover:bg-gray-300 transition">
-                        <span class="font-semibold text-sm text-black">Lihat Selengkapnya</span>
-                        <img src="assets/img/chevron.png" class="w-5 h-5">
+                    <button
+                        class="group mt-auto w-full rounded-md
+                            bg-[#006041] border border-[#006041]
+                            py-3 flex justify-center items-center gap-4
+                            transition-all duration-300
+                            hover:bg-transparent">
+                        <span
+                            class="font-semibold text-sm text-white
+                                transition-colors duration-300
+                                group-hover:text-[#006041]">
+                            Lihat Selengkapnya
+                        </span>
+                        <img
+                            src="assets/img/ChevronPutih.png"
+                            class="w-5 h-5 block group-hover:hidden"
+                        >
+                        <img
+                            src="assets/img/ChevronIjo.png"
+                            class="w-5 h-5 hidden group-hover:block">
                     </button>
                 </div>
 
                 <!-- ================= CARD 3 ================= -->
-                <div class="relative overflow-hidden rounded-xl border border-[#006041] bg-black/15 backdrop-blur-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_20px_10px_rgba(255,255,255,0.08)] flex flex-col h-full">
+                <div class="relative overflow-hidden rounded-xl border border-[#006041] bg-[#F6F2EB]/15 backdrop-blur-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_20px_10px_rgba(255,255,255,0.08)] flex flex-col h-full">
                     <div class="flex justify-center shrink-0">
                         <div class="p-6">
                             <img src="assets/img/Berasmu.jpg" class="w-40 h-40 object-contain">
@@ -916,35 +948,51 @@
                         <h3 class="text-3xl font-bold text-[#006041] leading-tight">BERASMU.</h3>
                         <span class="px-4 py-1 rounded-full bg-white text-sm text-black">Food and Beverage</span>
                     </div>
-                    <p class="text-center text-white text-sm leading-6 flex-1 mb-4">
+                    <p class="text-center text-black text-sm leading-6 flex-1 mb-4">
                         Berasmu menyediakan beras berkualitas yang dipanen langsung dari petani lokal.
                     </p>
-                    <hr class="border-white mb-4 shrink-0">
+                    <hr class="border-black mb-4 shrink-0">
                     <div class="flex flex-col gap-3 text-sm mb-4 min-h-40 shrink-0">
                         <div class="flex gap-3">
-                            <img src="assets/img/CalenderPutih.png" class="w-5 h-5 shrink-0">
+                            <img src="assets/img/CalenderCoklat.png" class="w-5 h-5 shrink-0">
                             <div>
-                                <h4 class="font-semibold">Berdiri Sejak</h4>
-                                <p class="text-white">2026</p>
+                                <h4 class="font-semibold  text-black">Berdiri Sejak</h4>
+                                <p class="text-black">2026</p>
                             </div>
                         </div>
                         <div class="flex gap-3">
-                            <img src="assets/img/LokasiPutih.png" class="w-5 h-5 shrink-0">
+                            <img src="assets/img/LokasiCoklat.png" class="w-5 h-5 shrink-0">
                             <div>
-                                <h4 class="font-semibold">Lokasi Tempat</h4>
-                                <p class="text-white wrap-break-word">Jl. Kodari Mentaraman, Ngebruk, 
+                                <h4 class="font-semibold text-black">Lokasi Tempat</h4>
+                                <p class="text-black wrap-break-word">Jl. Kodari Mentaraman, Ngebruk, 
                                     Kec. Sumberpucung, Kabupaten Malang, Jawa Timur 65165</p>
                             </div>
                         </div>
                     </div>
-                    <button class="mt-auto w-full rounded-md bg-gray-200 py-3 flex justify-center items-center gap-4 hover:bg-gray-300 transition">
-                        <span class="font-semibold text-sm text-black">Lihat Selengkapnya</span>
-                        <img src="assets/img/chevron.png" class="w-5 h-5">
+                    <button
+                        class="group mt-auto w-full rounded-md
+                            bg-[#006041] border border-[#006041]
+                            py-3 flex justify-center items-center gap-4
+                            transition-all duration-300
+                            hover:bg-transparent">
+                        <span
+                            class="font-semibold text-sm text-white
+                                transition-colors duration-300
+                                group-hover:text-[#006041]">
+                            Lihat Selengkapnya
+                        </span>
+                        <img
+                            src="assets/img/ChevronPutih.png"
+                            class="w-5 h-5 block group-hover:hidden"
+                        >
+                        <img
+                            src="assets/img/ChevronIjo.png"
+                            class="w-5 h-5 hidden group-hover:block">
                     </button>
                 </div>
 
                 <!-- ================= CARD 4 ================= -->
-                <div class="relative overflow-hidden rounded-xl border border-[#006041] bg-black/15 backdrop-blur-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_20px_10px_rgba(255,255,255,0.08)] flex flex-col h-full">
+                <div class="relative overflow-hidden rounded-xl border border-[#006041] bg-[#F6F2EB]/15 backdrop-blur-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_20px_10px_rgba(255,255,255,0.08)] flex flex-col h-full">
                     <div class="flex justify-center shrink-0">
                         <div class="p-6">
                             <img src="assets/img/Alstard.png" class="w-40 h-40 object-contain">
@@ -954,30 +1002,46 @@
                         <h3 class="text-3xl font-bold text-[#006041] leading-tight">ALSTARD</h3>
                         <span class="px-4 py-1 rounded-full bg-white text-sm text-black">Food and Beverage</span>
                     </div>
-                    <p class="text-center text-white text-sm leading-6 flex-1 mb-4">
+                    <p class="text-center text-black text-sm leading-6 flex-1 mb-4">
                         Alstard merupakan usaha budidaya sawi hidroponik yang menghasilkan sawi segar dan berkualitas tinggi.
                     </p>
-                    <hr class="border-white mb-4 shrink-0">
+                    <hr class="border-black mb-4 shrink-0">
                     <div class="flex flex-col gap-3 text-sm mb-4 min-h-40 shrink-0">
                         <div class="flex gap-3">
-                            <img src="assets/img/CalenderPutih.png" class="w-5 h-5 shrink-0">
+                            <img src="assets/img/CalenderCoklat.png" class="w-5 h-5 shrink-0">
                             <div>
-                                <h4 class="font-semibold">Berdiri Sejak</h4>
-                                <p class="text-white">2026</p>
+                                <h4 class="font-semibold text-black">Berdiri Sejak</h4>
+                                <p class="text-black">2026</p>
                             </div>
                         </div>
                         <div class="flex gap-3">
-                            <img src="assets/img/LokasiPutih.png" class="w-5 h-5 shrink-0">
+                            <img src="assets/img/LokasiCoklat.png" class="w-5 h-5 shrink-0">
                             <div>
-                                <h4 class="font-semibold">Lokasi Tempat</h4>
-                                <p class="text-white wrap-break-word">Jl. Kodari Mentaraman, Ngebruk, 
+                                <h4 class="font-semibold text-black">Lokasi Tempat</h4>
+                                <p class="text-black wrap-break-word">Jl. Kodari Mentaraman, Ngebruk, 
                                 Kec. Sumberpucung, Kabupaten Malang, Jawa Timur 65165</p>
                             </div>
                         </div>
                     </div>
-                    <button class="mt-auto w-full rounded-md bg-gray-200 py-3 flex justify-center items-center gap-4 hover:bg-gray-300 transition">
-                        <span class="font-semibold text-sm text-black">Lihat Selengkapnya</span>
-                        <img src="assets/img/chevron.png" class="w-5 h-5">
+                    <button
+                        class="group mt-auto w-full rounded-md
+                            bg-[#006041] border border-[#006041]
+                            py-3 flex justify-center items-center gap-4
+                            transition-all duration-300
+                            hover:bg-transparent">
+                        <span
+                            class="font-semibold text-sm text-white
+                                transition-colors duration-300
+                                group-hover:text-[#006041]">
+                            Lihat Selengkapnya
+                        </span>
+                        <img
+                            src="assets/img/ChevronPutih.png"
+                            class="w-5 h-5 block group-hover:hidden"
+                        >
+                        <img
+                            src="assets/img/ChevronIjo.png"
+                            class="w-5 h-5 hidden group-hover:block">
                     </button>
                 </div>
             </div>
